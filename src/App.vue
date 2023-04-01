@@ -37,7 +37,7 @@ const ResetGame = () => {
 	<main class="pt-8 text-center">
 		<h1 class="mb-8 text-3xl font-bold uppercase">Tic Tac Toe</h1>
 
-		<h3 class="text-xl mb-4">ხო {{ player }}'ს ჯერია</h3>
+		<h3 class="text-xl mb-4">კი ბატონო '{{ player }}'-ს ჯერია</h3>
 
 		<div class="flex flex-col items-center mb-8">
 			<div 
@@ -55,7 +55,7 @@ const ResetGame = () => {
 		</div>
 
 		<div class="text-center">
-			<h2 v-if="winner" class="text-6xl font-bold mb-8">მოგიგო '{{ winner }}'მა ჯიგო!</h2>
+			<h2 v-if="winner" class="text-6xl font-bold mb-8">მოგიგო '{{ winner }}'-მა ჯიგო!</h2>
 			<button @click="ResetGame" class="px-4 py-2 bg-pink-500 rounded uppercase font-bold hover:bg-pink-600 duration-300">კაი თავიდან დავიწყოთ</button>
 		</div>
 	</main>
